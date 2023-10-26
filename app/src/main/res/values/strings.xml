@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Firefox Relay</string>
+    <string name="address_created">New address created</string>
+    <string name="address_deleted">Address deleted</string>
+</resources>
