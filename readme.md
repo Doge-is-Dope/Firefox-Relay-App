@@ -6,7 +6,7 @@
   <h3 align="center">Firefox Relay App</h3>
 
   <p align="center">
-    App implementation of Firefox relay
+    App implementation of Firefox Relay
     <br />
     <br />
     <a href="https://relay.firefox.com/">Official Website</a>

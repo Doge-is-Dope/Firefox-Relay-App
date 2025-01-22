@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class CreateAddressData(
+data class AddressData(
     @SerialName("description")
     val description: String = "",
     @SerialName("enabled")

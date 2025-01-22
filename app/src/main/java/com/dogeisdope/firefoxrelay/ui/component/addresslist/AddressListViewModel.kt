@@ -52,6 +52,17 @@ class AddressListViewModel : ViewModel() {
         }
     }
 
+    fun updateAddressDescription(id: Long, description: String) {
+        viewModelScope.launch {
+            try {
+                repository.updateRelayAddress(id, description).transformResponse()
+                fetchRelayAddresses()
+            } catch (e: Exception) {
+                _errorUiState.value = ErrorUiState.Error(e)
+            }
+        }
+    }
+
     private fun getCurrentDateTime(): String {
         val currentDateTime = LocalDateTime.now()
         val formatter = DateTimeFormatter.ofPattern("MM/dd hh:mm a")

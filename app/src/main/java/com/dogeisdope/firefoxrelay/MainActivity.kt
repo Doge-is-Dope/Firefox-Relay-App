@@ -118,6 +118,9 @@ fun MainScreen(addressListViewModel: AddressListViewModel) {
                         }
                         addressCount = it
                     },
+                    onUpdateAddress = { id, description ->
+                        addressListViewModel.updateAddressDescription(id, description)
+                    },
                     onDeleteAddress = {
                         addressListViewModel.deleteRelayAddress(it)
                     },

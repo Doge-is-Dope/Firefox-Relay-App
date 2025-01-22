@@ -23,6 +23,7 @@ import java.time.ZonedDateTime
 fun AddressList(
     uiState: AddressUiState,
     onFetchAddress: (Int) -> Unit,
+    onUpdateAddress: (Long, String) -> Unit,
     onDeleteAddress: (Long) -> Unit,
     onRefreshAddresses: () -> Unit,
 ) {
@@ -43,6 +44,7 @@ fun AddressList(
                     AddressItem(
                         modifier = Modifier.animateItemPlacement(),
                         item = address,
+                        onAddressUpdate = onUpdateAddress,
                         onAddressDelete = { onDeleteAddress(address.id) }
                     )
                 }
@@ -77,6 +79,7 @@ fun AddressListPreview() {
                 )
             }),
         onFetchAddress = {},
+        onUpdateAddress = { _, _ -> },
         onDeleteAddress = {},
         onRefreshAddresses = {}
     )
