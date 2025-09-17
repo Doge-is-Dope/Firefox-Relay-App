@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/blocto/blocto-android-ui/assets/7845979/5cfdb698-a455-4bd9-a6d2-b13723795086" alt="Logo" width="100" height="100">
+    <img src="assets/relay-logo.svg" width="100" height="100" alt="Relay" />
   </a>
 
   <h3 align="center">Firefox Relay App</h3>
